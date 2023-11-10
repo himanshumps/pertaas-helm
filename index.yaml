@@ -2,8 +2,18 @@ apiVersion: v1
 entries:
   pertaas-basic-test:
   - apiVersion: v2
+    appVersion: 1.18.0
+    created: "2023-11-10T14:49:35.834245+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 750b052d93a131b05426c3434761aa1f64a95e813a008c195f2e60699fc2dd77
+    name: pertaas-basic-test
+    type: application
+    urls:
+    - https://himanshumps.github.io/pertaas-helm/pertaas-basic-test-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     appVersion: 1.17.0
-    created: "2023-11-10T14:13:17.984736+05:30"
+    created: "2023-11-10T14:49:35.834132+05:30"
     description: A Helm chart for Kubernetes
     digest: d8af07f74b4ab0aa950a82fa524dcc50127679c35af955e3917c9d86b1ed8a68
     name: pertaas-basic-test
@@ -13,7 +23,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-11-10T14:13:17.984537+05:30"
+    created: "2023-11-10T14:49:35.833919+05:30"
     description: A Helm chart for Kubernetes
     digest: de0b4e55d244e6fe828c8bf9f35da45126c0354d68c85d5194aea34263503f23
     name: pertaas-basic-test
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://himanshumps.github.io/pertaas-helm/pertaas-basic-test-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-10T14:13:17.983649+05:30"
+generated: "2023-11-10T14:49:35.832466+05:30"

@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "properties": {
+      "jobId": {
+        "description": "The job id with shoule be used to run the test",
+        "type": "string"
+      },
+      "stepDuration": {
+        "description": "The scrape interval for the running job. Default value is 10",
+        "type": "integer",
+        "minimum": 5
+      },
+      "requestJson": {
+        "description": "The input json based on which the test will be executed",
+        "type": "object"
+      }
+    },
+    "required": [
+      "jobId",
+      "stepDuration",
+      "requestJson"
+    ],
+    "title": "Values for running the pertaas-basic-test",
+    "type": "object"
+  }
