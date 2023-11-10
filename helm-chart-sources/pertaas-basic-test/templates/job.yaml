@@ -28,7 +28,7 @@ spec:
               value: {{ quote .Values.stepDuration }}
             - name: REQUEST_JSON
               value: |
-                {{ .Files.Get (printf "%s" .Values.fileName) }}
+                {{ .Values.requestJson }}
           resources:
             requests:
               cpu: {{ quote .Values.cpu }}

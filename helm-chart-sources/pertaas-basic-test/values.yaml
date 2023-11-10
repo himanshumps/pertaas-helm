@@ -1,0 +1,4 @@
+jobId: The job-id with which to run the test
+stepDuration: The scrape interval for the running job. Default value is 10
+requestJson: |
+  The input json based on which the test will be executed
