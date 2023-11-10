@@ -12,7 +12,7 @@
       },
       "requestJson": {
         "description": "The input json based on which the test will be executed",
-        "type": "object"
+        "type": "string"
       }
     },
     "required": [
