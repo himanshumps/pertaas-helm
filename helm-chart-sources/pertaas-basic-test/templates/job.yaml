@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: job
-          image: image-registry.openshift-image-registry.svc:5000/{{ .Release.Namespace }}/pertaas-{{ .Values.jobId }}
+          image: image-registry.openshift-image-registry.svc:5000/{{ .Release.Namespace }}/pertaas-j-basic-test
           ports:
             - containerPort: 8080
               protocol: TCP
@@ -30,10 +30,7 @@ spec:
               value: |
                 {{ .Values.requestJson }}
           resources:
-            requests:
-              cpu: {{ quote .Values.cpu }}
-              memory: {{ quote .Values.ram }}
             limits:
-              cpu: {{ quote .Values.cpu }}
-              memory: {{ quote .Values.ram }}
+              cpu: '{{  .Values.cpu }}m'
+              memory: '{{ .Values.memory }}Mi'
       restartPolicy: Never
