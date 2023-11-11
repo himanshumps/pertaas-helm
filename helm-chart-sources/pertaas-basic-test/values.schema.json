@@ -12,17 +12,17 @@
       "stepDuration": {
         "description": "The scrape interval for the running job. Default value is 10",
         "type": "integer",
-        "minimum": 5
+        "minimum": 1
       },
       "cpu": {
         "description": " The limit on the amount of CPU to be used. This value is in millicores",
         "type": "integer",
-        "minimum": 500
+        "minimum": 1
       },
       "memory": {
         "description": "The limit on the amount of memory to be used. This value is in MB.",
         "type": "integer",
-        "minimum": 512
+        "minimum": 1
       }
     },
     "required": [
