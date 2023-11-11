@@ -11,18 +11,15 @@
       },
       "stepDuration": {
         "description": "The scrape interval for the running job. Default value is 10",
-        "type": "string",
-        "minimum": 1
+        "type": "string"
       },
       "cpu": {
         "description": " The limit on the amount of CPU to be used. This value is in millicores",
-        "type": "string",
-        "minimum": 1
+        "type": "string"
       },
       "memory": {
         "description": "The limit on the amount of memory to be used. This value is in MB.",
-        "type": "string",
-        "minimum": 1
+        "type": "string"
       }
     },
     "required": [
