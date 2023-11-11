@@ -5,20 +5,32 @@
         "description": "The job id with shoule be used to run the test",
         "type": "string"
       },
+      "requestJson": {
+        "description": "The input json based on which the test will be executed",
+        "type": "string"
+      },
       "stepDuration": {
         "description": "The scrape interval for the running job. Default value is 10",
         "type": "integer",
         "minimum": 5
       },
-      "requestJson": {
-        "description": "The input json based on which the test will be executed",
-        "type": "string"
+      "cpu": {
+        "description": " The limit on the amount of CPU to be used. This value is in millicores",
+        "type": "integer",
+        "minimum": 500
+      },
+      "memory": {
+        "description": "The limit on the amount of memory to be used. This value is in MB.",
+        "type": "integer",
+        "minimum": 512
       }
     },
     "required": [
       "jobId",
       "stepDuration",
-      "requestJson"
+      "requestJson",
+      "cpu",
+      "memory"
     ],
     "title": "Values for running the pertaas-basic-test",
     "type": "object"

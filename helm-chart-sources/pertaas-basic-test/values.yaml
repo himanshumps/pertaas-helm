@@ -2,3 +2,5 @@ jobId: The job-id with which to run the test
 stepDuration: The scrape interval for the running job. Default value is 10
 requestJson: |
   The input json based on which the test will be executed
+cpu: The limit on the amount of CPU to be used. This value is in millicores
+memory: The limit on the amount of memory to be used. This value is in MB.
