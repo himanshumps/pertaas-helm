@@ -2,8 +2,19 @@ apiVersion: v1
 entries:
   pertaas-basic-test:
   - apiVersion: v2
+    appVersion: 1.24.0
+    created: "2023-11-13T19:49:02.376313+05:30"
+    description: The basic test which takes input like jobId, request json and step
+      duration. The complete documentation is available at https://github.com/himanshumps/pertaas-job/blob/main/README.md
+    digest: a5d899fb8cea828d998b98fedb354b7d58dac28b66c7613299c413c8607075e0
+    name: pertaas-basic-test
+    type: application
+    urls:
+    - https://himanshumps.github.io/pertaas-helm/pertaas-basic-test-0.9.0.tgz
+    version: 0.9.0
+  - apiVersion: v2
     appVersion: 1.23.0
-    created: "2023-11-11T15:57:49.195699+05:30"
+    created: "2023-11-13T19:49:02.376071+05:30"
     description: The basic test which takes input like stepDuration, requestJson and
       other parameters
     digest: 27d37686e0fc5cf2702219fdbf36a6914c43d77fcc16164bf998ffcb70a585fb
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://himanshumps.github.io/pertaas-helm/pertaas-basic-test-0.8.0.tgz
     version: 0.8.0
-generated: "2023-11-11T15:57:49.194516+05:30"
+generated: "2023-11-13T19:49:02.374292+05:30"

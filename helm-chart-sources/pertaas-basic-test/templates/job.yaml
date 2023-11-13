@@ -3,6 +3,7 @@ kind: Job
 metadata:
   name: {{ .Values.jobId }}
   labels:
+    # This is need for podmonitor to scrape the metrics
     pertaas-job: "true"
 spec:
   template:
@@ -13,12 +14,15 @@ spec:
     spec:
       containers:
         - name: job
+          # We are using the image from openshift registry. This can be changed to read from any external repository as well.
           image: image-registry.openshift-image-registry.svc:5000/{{ .Release.Namespace }}/pertaas-j-basic-test
           ports:
+            # Needed for prometheus scrape using podmonitor
             - containerPort: 8080
               protocol: TCP
               name: web
           envFrom:
+            # This is needed as the job uses the secrets to connect to couchbase and push the scrape metrics and the final summary metrics.
             - secretRef:
                 name: couchbase-secret
           env:
@@ -31,6 +35,6 @@ spec:
                 {{ .Values.requestJson }}
           resources:
             limits:
-              cpu: '{{  .Values.cpu }}m'
-              memory: '{{ .Values.memory }}Mi'
+              cpu: "{{ .Values.cpu }}m"
+              memory: "{{ .Values.memory }}Mi"
       restartPolicy: Never
